@@ -1,0 +1,8 @@
+services:
+  database:
+    image: "postgres:16.14-alpine3.24"
+    environment:
+      POSTGRES_USER: "okin"
+      POSTGRES_PASSWORD: "okin"
+    ports:
+      - "5432:5432"
