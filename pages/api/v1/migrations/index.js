@@ -33,6 +33,5 @@ export default async function migrations(request, response) {
 
     return response.status(200).json(pendingMigrations);
   }
-
   return response.status(405).json({ error: "Method Not Allowed" });
 }
